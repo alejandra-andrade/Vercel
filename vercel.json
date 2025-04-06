@@ -5,8 +5,8 @@
       { "src": "backend/server.js", "use": "@vercel/node" }
     ],
     "routes": [
-      { "src": "/api(.*)", "dest": "/backend/server.js" },
-      { "src": "/(.*)", "dest": "/frontend/pages/index.js" }
+      { "src": "/(.*)", "dest": "/backend/server.js" },
+      { "src": "/api(.*)", "dest": "/frontend/pages/index.js" }
     ],
     "env": {
       "PORT": "3000",
