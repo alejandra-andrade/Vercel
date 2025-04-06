@@ -7,6 +7,7 @@ export const fetchHabits = createAsyncThunk(
         const response = await fetch("http://localhost:5000/habits", {
             method: "GET",
             headers: {
+                "Content-Type": "application/json",
                 Authorization: `Bearer ${token}`, 
             },
         });
